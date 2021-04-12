@@ -35,8 +35,9 @@ Fungsi dasar dan utama dari RADOS disediakan oleh kedua Ceph’s server daemons 
 
 ###### Referensi
 
-Wikipedia Ceph : (https://en.wikipedia.org/wiki/Ceph_(software) 
-Ceph Documentation : (https://docs.ceph.com) 
+Wikipedia Ceph : [Links](https://en.wikipedia.org/wiki/Ceph_(software) 
+
+Ceph Documentation : [Links](https://docs.ceph.com) 
 
 ```
 Terus belajar dan Kembangkan skillmu sampai yang kau impikan tercapai.
