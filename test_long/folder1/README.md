@@ -22,11 +22,9 @@ Ceph block storage dapat dijadikan virtual disk pada Linux maupun virtual machin
 
 Ceph object storage dapat diakses melalui Amazon S3 (Simple StorageService) dan OpenStack Swift REST (Representational State Transfer).
 
-### Header 3
+## Arsitektur Ceph
 
-```
-This is a code block following a header.
-```
+Ceph terdiri dari beberapa part yang berbeda. RADOS (also known as Ceph Object Store or Ceph Storage Cluster) merupakan pondasi dari Ceph.  RADOS merupakan the core set of storage software yang menyimpan user data. Akronim dari RADOS (Reliable Autonomic Distributed Object Storage).
 
 #### Header 4
 
