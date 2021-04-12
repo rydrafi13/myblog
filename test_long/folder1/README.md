@@ -10,11 +10,17 @@ pada kesempatan kali ini kita akan membahas tentang Ceph, Nah kita mulai dengan 
 
 Ceph dibuat dan diciptakan oleh Sage Weil sebagai bagian dari disertasi doktoralnya di Universitas California, Santa Cruz (UCSC). Tujuan asli dari proyek Ceph adalah membangun sistem file yang sangat scalable, highly available file system, dimana dapat dengan cepat berevolusi menjadi sistem penyimpanan terdistribusi generik yang dibangun pada penyimpanan objek tingkat rendah, Pada bulan April 2014, Redhat membeli inktank, dan ceph dikembangkan secara in-house oleh Redhat. 
 
-This is a normal paragraph following a header. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.
+# Perkenalan Ceph
 
-## Header 2
+Ceph (diucapkan /ˈsɛf/ atau /ˈkɛf/ ) adalah open-source software storage platform yang berbasis penyimpanan objek pada suatu cluster komputer. Ceph menyediakan antarmuka penyimpanan dengan level object, block, dan file. Tujuan utama Ceph adalah menyediakan penyimpanan terdistribusi tanpa satu titik kegagalan, dapat ditingkatkan hingga skala exabyte, dan tersedia secara bebas.
 
-> This is a blockquote following a header. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.
+Ceph mereplikasi data dan membuatnya fault tolerance. menggunakan perangkat keras komoditas dan tidak memerlukan dukungan perangkat keras khusus.
+
+Cepth storage cluster menggunakan algoritma CRUSH (Controlled Replication Under Scalable Hashing) yang memastikan bahwa data terdistribusi ke seluruh anggota cluster dan semua cluster node dapat menyediakan data tanpa ada bottleneck.
+
+Ceph block storage dapat dijadikan virtual disk pada Linux maupun virtual machine. Teknologi RADOS yang dimiliki Ceph memampukan Ceph melakukan snapshot dan replikasi.
+
+Ceph object storage dapat diakses melalui Amazon S3 (Simple StorageService) dan OpenStack Swift REST (Representational State Transfer).
 
 ### Header 3
 
