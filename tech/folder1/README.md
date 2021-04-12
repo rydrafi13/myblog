@@ -1,7 +1,3 @@
----
-sort: 2
----
-
 # Ceph : Introduction 
 
 <center>
