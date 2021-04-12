@@ -29,12 +29,20 @@ Ceph object storage dapat diakses melalui Amazon S3 (Simple StorageService) dan 
 
 Ceph terdiri dari beberapa part yang berbeda. RADOS (also known as Ceph Object Store or Ceph Storage Cluster) merupakan pondasi dari Ceph.  RADOS merupakan the core set of storage software yang menyimpan user data. Akronim dari RADOS (Reliable Autonomic Distributed Object Storage).
 
+<center>
+    <img src="https://i-3.co.id/wp-content/uploads/2018/05/2-2.png" alt="Ceph" title="Ceph Architecture" width="200" />
+</center>
+
 ## Komponen Rados
 
 Fungsi dasar dan utama dari RADOS disediakan oleh kedua Ceph’s server daemons :
 
 - OSDs: Object storage daemons.
 - MONs: Monitoring servers.  
+
+<center>
+    <img src="https://misskecupbung.files.wordpress.com/2018/08/asset-v1_citycloudcc212201808typeassetblockimages_ceph-introduction-22.png" alt="Ceph" title="Ceph Rados" width="200" />
+</center>
 
 ###### Referensi
 
