@@ -4,19 +4,11 @@ sort: 1
 
 # Ceph : Introduction 
 
-Text can be **bold**, _italic_, or ~~strikethrough~~. [Links](https://github.com) should be blue with no underlines (unless hovered over).
+pada kesempatan kali ini kita akan membahas tentang Ceph, Nah kita mulai dengan perkenalan tentang ceph terlebih dahulu, pembahasan selanjutnya kita lanjut melakukan installasi dan integrasi ceph pada openstack.
 
-There should be whitespace between paragraphs. There should be whitespace between paragraphs. There should be whitespace between paragraphs. There should be whitespace between paragraphs.
+# Sejarah Ceph
 
-There should be whitespace between paragraphs. There should be whitespace between paragraphs. There should be whitespace between paragraphs. There should be whitespace between paragraphs.
-
-> There should be no margin above this first sentence.
->
-> Blockquotes should be a lighter gray with a gray border along the left side.
->
-> There should be no margin below this final sentence.
-
-# Header 1
+Ceph dibuat dan diciptakan oleh Sage Weil sebagai bagian dari disertasi doktoralnya di Universitas California, Santa Cruz (UCSC). Tujuan asli dari proyek Ceph adalah membangun sistem file yang sangat scalable, highly available file system, dimana dapat dengan cepat berevolusi menjadi sistem penyimpanan terdistribusi generik yang dibangun pada penyimpanan objek tingkat rendah, Pada bulan April 2014, Redhat membeli inktank, dan ceph dikembangkan secara in-house oleh Redhat. 
 
 This is a normal paragraph following a header. Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta chuck sausage brisket ham hock rump pig. Chuck kielbasa leberkas, pork bresaola ham hock filet mignon cow shoulder short ribs biltong.
 
