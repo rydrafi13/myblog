@@ -51,5 +51,5 @@ Wikipedia Ceph : [Links](https://en.wikipedia.org/wiki/Ceph_(software))
 Ceph Documentation : [Links](https://docs.ceph.com) 
 
 ```
-Terus belajar dan Kembangkan skillmu sampai yang kau impikan tercapai.
+Jika kamu tidak tahan dengan lelahnya belajar maka kamu harus tahan dengan perihnya kebodohan.
 ```
