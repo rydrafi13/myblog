@@ -12,9 +12,13 @@ Lab yang digunakan oleh kita kali ini adalah sebagai berikut.
 
 ## Langkah Sebelum Installasi
 
-**Ceph-Admin**
+```note
+Lakukan pada node ceph-admin, ceph-osd1, ceph-osd2
 
-pada node **ceph-admin**
+```
 
-**Ceph-Osd1**
-**Ceph-Osd2**
+- Konfigurasi Hostname
+- Konfigurasi Hosts
+- Update & Upgrade
+- Konfigurasi Zona Waktu
+- Konfigurasi SSH
