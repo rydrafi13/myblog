@@ -10,3 +10,4 @@ Lab yang digunakan oleh kita kali ini adalah sebagai berikut.
 
 <div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-TTtJlORuh48/YHUZTl4xTwI/AAAAAAAAAro/W7tYE6kg1wULrkPe20TVSDLIhN4f7J6rACLcBGAsYHQ/s0/Setup.png" style="display: block; padding: 1em 0px; text-align: center;"><img alt="" border="0" data-original-height="128" data-original-width="599" height="85" src="https://1.bp.blogspot.com/-TTtJlORuh48/YHUZTl4xTwI/AAAAAAAAAro/W7tYE6kg1wULrkPe20TVSDLIhN4f7J6rACLcBGAsYHQ/w400-h85/Setup.png" width="400" /></a></div>
 
+###### *untuk ip bisa disesuaikan sendiri asalkan dalam 1 network.
