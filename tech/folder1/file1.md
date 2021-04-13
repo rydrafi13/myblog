@@ -18,7 +18,22 @@ Lakukan pada node ceph-admin, ceph-osd1, ceph-osd2
 ```
 
 - Konfigurasi Hostname
+```scss
+    # vi /etc/hostname
+```
 - Konfigurasi Hosts
+```scss
+    # vi /etc/hosts
+```
 - Update & Upgrade
+```scss
+    # apt-get update && apt-get upgrade && apt-get dist-upgrade -y
+```
 - Konfigurasi Zona Waktu
+```scss
+    # timedatectl set-timezone Asia/Jakarta
+```
 - Konfigurasi SSH
+```scss
+    # vi /etc/ssh/sshd_config
+```
