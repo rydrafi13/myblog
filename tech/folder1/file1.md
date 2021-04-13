@@ -25,7 +25,6 @@ Lakukan pada node ceph-admin, ceph-osd1, ceph-osd2
 ```scss
     # vi /etc/hosts
 ```
-<div class="separator" style="clear: both;"><a href="https://1.bp.blogspot.com/-YCmZLZVgp0Y/YHVewPiqz8I/AAAAAAAAArw/NmKEns_TNK8bGHO3mlE1Je6fogKuV9xVgCLcBGAsYHQ/s407/hosts.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="320" data-original-height="61" data-original-width="407" src="https://1.bp.blogspot.com/-YCmZLZVgp0Y/YHVewPiqz8I/AAAAAAAAArw/NmKEns_TNK8bGHO3mlE1Je6fogKuV9xVgCLcBGAsYHQ/s320/hosts.png"/></a></div>
 - Update & Upgrade
 ```scss
     # apt-get update && apt-get upgrade && apt-get dist-upgrade -y
@@ -37,4 +36,12 @@ Lakukan pada node ceph-admin, ceph-osd1, ceph-osd2
 - Konfigurasi SSH
 ```scss
     # vi /etc/ssh/sshd_config
+    
+    ubah bagian root login
+    PermitRootLogin yes
 ```
+jika sudah kemudian restart service sshd
+```scss
+    # systemctl restart sshd
+```
+
