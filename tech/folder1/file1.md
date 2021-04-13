@@ -37,7 +37,7 @@ Lakukan pada node ceph-admin, ceph-osd1, ceph-osd2
 ```scss
     # vi /etc/ssh/sshd_config
     
-    ubah bagian root login
+    # change
     PermitRootLogin yes
 ```
 jika sudah kemudian restart service sshd
@@ -45,3 +45,39 @@ jika sudah kemudian restart service sshd
     # systemctl restart sshd
 ```
 
+## Konfigurasi SSH
+
+```note
+Lakukan pada node ceph-admin
+
+```
+
+- Generate Public Key Baru
+```scss
+    # ssh-keygen -q -N ""
+```
+- Konfigurasi config ssh
+```scss
+    # vi ~/.ssh/config
+
+    # add
+    Host ceph-admin
+        Hostname ceph-admin
+        User root
+    Host ceph-osd1
+        Hostname ceph-osd1
+        User root
+    Host ceph-osd2
+        Hostname ceph-osd2
+        User root
+```
+- Ubah permission
+```scss
+   # chmod 600 ~/.ssh/config 
+```
+- Copy Public Key ke Node Ceph lainnya 
+```scss
+    # ssh-copy-id ceph-admin
+    # ssh-copy-id ceph-osd1
+    # ssh-copy-id ceph-osd2
+```
