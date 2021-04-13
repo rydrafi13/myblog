@@ -81,3 +81,114 @@ Lakukan pada node ceph-admin
     # ssh-copy-id ceph-osd1
     # ssh-copy-id ceph-osd2
 ```
+
+## Install Ceph
+
+```note
+Lakukan pada node ceph-admin
+
+```
+
+- Install Paket Ceph
+```scss
+    # for NODE in ceph-admin ceph-osd1 ceph-osd2 do 
+      ssh $NODE "apt-get install ceph -y" 
+      done
+```
+- Generate uuid Node admin
+```scss
+    # uuidgen
+```
+- Konfigurasi file ceph.conf
+```scss
+    # vi /etc/ceph/ceph.conf
+
+    # add
+    [global]
+    # definisikan cluster network untuk monitoring
+    cluster network = 172.30.1.0/24
+    # definisikan public network
+    public network = 172.30.1.0/24
+    # definisikan UUID 
+    fsid = 44319ff7-4bb2-4244-a39e-ea7cc33a2fd4
+    # definisikan IP address untuk Monitor Daemon
+    mon host = 172.30.1.10
+    # definisikan Hostname untuk Monitor Daemon
+    mon initial members = admin
+    osd pool default crush rule = -1
+
+    # mon.(nama Nodenya)
+    [mon.admin]
+    # definisikan Hostname untuk Monitor Daemon
+    host = admin
+    # definisikan IP address untuk Monitor Daemon
+    mon addr = 172.30.1.10
+    # allow to delete pools
+    mon allow pool delete = true
+```
+- Membuat secret key untuk Cluster Monitor
+```scss
+    # ceph-authtool --create-keyring /etc/ceph/ceph.mon.keyring --gen-key -n mon. --cap mon 'allow *' 
+```
+- Membuat secret key untuk Cluster Admin
+```scss
+    # ceph-authtool --create-keyring /etc/ceph/ceph.client.admin.keyring --gen-key -n client.admin --cap mon 'allow *' --cap osd 'allow *' --cap mds 'allow *' --cap mgr 'allow *' 
+```
+- Membuat secret key untuk bootstrap
+```scss
+    # ceph-authtool --create-keyring /var/lib/ceph/bootstrap-osd/ceph.keyring --gen-key -n client.bootstrap-osd --cap mon 'profile bootstrap-osd' --cap mgr 'allow r'
+```
+- Mengimport secret key yang sudah dibuat tadi
+```scss
+    # ceph-authtool /etc/ceph/ceph.mon.keyring --import-keyring /var/lib/ceph/bootstrap-osd/ceph.keyring
+    # ceph-authtool /etc/ceph/ceph.mon.keyring --import-keyring /etc/ceph/ceph.client.admin.keyring 
+```
+- Membuat Monitor Map
+```scss
+    # FSID=$(grep "^fsid" /etc/ceph/ceph.conf | awk {'print $NF'})
+    # NODENAME=$(grep "^mon initial" /etc/ceph/ceph.conf | awk {'print $NF'}) 
+    # NODEIP=$(grep "^mon host" /etc/ceph/ceph.conf | awk {'print $NF'}) 
+    # monmaptool --create --add $NODENAME $NODEIP --fsid $FSID /etc/ceph/monmap
+```
+- Membuat Direktori untuk Monitor Daemon
+```scss
+    # mkdir /var/lib/ceph/mon/ceph-admin
+```
+- Mengasosiasikan key dan monmap ke Monitor Daemon
+```scss
+    # ceph-mon --cluster ceph --mkfs -i $NODENAME --monmap /etc/ceph/monmap --keyring /etc/ceph/ceph.mon.keyring 
+    # chown ceph. /etc/ceph/ceph.* 
+    # chown -R ceph. /var/lib/ceph/mon/ceph-admin /var/lib/ceph/bootstrap-osd 
+    # systemctl enable --now ceph-mon@$NODENAME 
+```
+- Mengaktifkan Messenger v2 protocol
+```scss
+    # ceph mon enable-msgr2 
+```
+- Mengaktifkan Placement Group
+```scss
+    # ceph mgr module enable pg_autoscaler 
+```
+- Membuat Direktori untuk Manager Daemon
+```scss
+    # mkdir /var/lib/ceph/mgr/ceph-admin 
+```
+- Membuat Authentication key untuk manager Daemon
+```scss
+    # ceph auth get-or-create mgr.$NODENAME mon 'allow profile mgr' osd 'allow *' mds 'allow *' 
+    # ceph auth get-or-create mgr.admin | tee /etc/ceph/ceph.mgr.admin.keyring 
+    # cp /etc/ceph/ceph.mgr.admin.keyring /var/lib/ceph/mgr/ceph-admin/keyring  
+```
+- Mengubah permission file ceph.conf
+```scss 
+    # chown ceph. /etc/ceph/ceph.mgr.admin.keyring 
+    # chown -R ceph. /var/lib/ceph/mgr/ceph-admin
+```
+- Restart service Ceph
+```scss 
+    # systemctl enable --now ceph-mgr@$NODENAME
+```
+- Verifikasi Cluster Status
+```scss
+    # ceph -s 
+```
