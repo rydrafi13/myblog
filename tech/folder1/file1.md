@@ -10,3 +10,11 @@ Lab yang digunakan oleh kita kali ini adalah sebagai berikut.
 
 <center><i>*untuk ip bisa disesuaikan sendiri asalkan dalam 1 network.</i></center>
 
+## Langkah Sebelum Installasi
+
+**Ceph-Admin**
+
+pada node **ceph-admin**
+
+**Ceph-Osd1**
+**Ceph-Osd2**
