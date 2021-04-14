@@ -252,5 +252,5 @@ Lakukan pada node ceph-admin
     # ceph -s
 ```
 
-<p></p><div class="separator" style="clear: both; text-align: center;"><br /></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-vrM3AYaDyaU/YHZmc36ch3I/AAAAAAAAAsI/OWhsC2w-MeYIT5zBa2dyfY1obPdGyM1IgCLcBGAsYHQ/s497/ceph-s-osd.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="247" data-original-width="497" height="159" src="https://1.bp.blogspot.com/-vrM3AYaDyaU/YHZmc36ch3I/AAAAAAAAAsI/OWhsC2w-MeYIT5zBa2dyfY1obPdGyM1IgCLcBGAsYHQ/w320-h159/ceph-s-osd.png" width="320" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><br /></div><div style="text-align: justify;"><br /></div>&nbsp;<p></p>
+<div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-vrM3AYaDyaU/YHZmc36ch3I/AAAAAAAAAsI/OWhsC2w-MeYIT5zBa2dyfY1obPdGyM1IgCLcBGAsYHQ/s497/ceph-s-osd.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="247" data-original-width="497" height="159" src="https://1.bp.blogspot.com/-vrM3AYaDyaU/YHZmc36ch3I/AAAAAAAAAsI/OWhsC2w-MeYIT5zBa2dyfY1obPdGyM1IgCLcBGAsYHQ/w320-h159/ceph-s-osd.png" width="320" /></a></div>
 <center><i>*disini kita sudah berhasil menambahkan cluster storage pada ceph.</i></center>
