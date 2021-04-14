@@ -192,4 +192,4 @@ Lakukan pada node ceph-admin
 ```scss
     # ceph -s 
 ```
-<p></p><div class="separator" style="clear: both; text-align: justify;"><img border="0" data-original-height="218" data-original-width="425" height="164" src="https://1.bp.blogspot.com/-0FZiIx2Uv4Y/YHZbjtc8wDI/AAAAAAAAAr4/45FBbhHciMwCkBEBVMU16TVSN3wOruZGACLcBGAsYHQ/w320-h164/Ceph_mon.png" width="320" /></div><div style="text-align: justify;"><br /></div>&nbsp;<p></p>
+<div class="separator" style="clear: both; text-align: center;"><img border="0" data-original-height="218" data-original-width="425" height="164" src="https://1.bp.blogspot.com/-0FZiIx2Uv4Y/YHZbjtc8wDI/AAAAAAAAAr4/45FBbhHciMwCkBEBVMU16TVSN3wOruZGACLcBGAsYHQ/w320-h164/Ceph_mon.png" width="320" /></div>
