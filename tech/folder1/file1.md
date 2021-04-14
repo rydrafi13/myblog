@@ -280,3 +280,5 @@ Lakukan pada node ceph-admin
 jika sudah buka dibrowser dan masukkan url hasil output # ceph mgr services
 
 <p>&nbsp;</p><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-J7fgTWRKG-o/YHZpa4BlMEI/AAAAAAAAAsY/eOwwAYCmxz8X__mCZj9vL8pnFFOBWbetQCLcBGAsYHQ/s1365/Ceph.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="663" data-original-width="1365" src="https://1.bp.blogspot.com/-J7fgTWRKG-o/YHZpa4BlMEI/AAAAAAAAAsY/eOwwAYCmxz8X__mCZj9vL8pnFFOBWbetQCLcBGAsYHQ/s320/Ceph.png" width="320" /></a></div><br />
+
+<i>*Selesai</i>
