@@ -214,10 +214,12 @@ Copy file konfigurasi dan keyring dari node **ceph-admin** ke node lainnya.
     # scp /etc/ceph/ceph.client.admin.keyring ceph-osd2:/etc/ceph
     # scp /var/lib/ceph/bootstrap-osd/ceph.keyring ceph-osd2:/var/lib/ceph/bootstrap-osd 
 ```
+
 ```note
 Lakukan pada node ceph-admin, ceph-osd1, ceph-osd2
 
 ```
+
 - Konfigurasi osd pada node **ceph-admin**
 ```scss
     # chown ceph. /etc/ceph/ceph.* /var/lib/ceph/bootstrap-osd/*; \
