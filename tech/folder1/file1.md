@@ -273,12 +273,14 @@ Lakukan pada node ceph-admin
     # ceph dashboard ac-user-create rafiryd @dmin123 administrator 
 
     # ceph mgr services 
-
 ```
 <div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-5jT91uKG6m8/YHZpIxFkR3I/AAAAAAAAAsQ/xmORapzw8c8R6EiMfC3_GSvz6EMpzpTuACLcBGAsYHQ/s367/ceph-mgr.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="66" data-original-width="367" src="https://1.bp.blogspot.com/-5jT91uKG6m8/YHZpIxFkR3I/AAAAAAAAAsQ/xmORapzw8c8R6EiMfC3_GSvz6EMpzpTuACLcBGAsYHQ/s320/ceph-mgr.png" width="320" /></a></div><br />
 
 jika sudah buka dibrowser dan masukkan url hasil output # ceph mgr services
-
 <p>&nbsp;</p><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-J7fgTWRKG-o/YHZpa4BlMEI/AAAAAAAAAsY/eOwwAYCmxz8X__mCZj9vL8pnFFOBWbetQCLcBGAsYHQ/s1365/Ceph.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="663" data-original-width="1365" src="https://1.bp.blogspot.com/-J7fgTWRKG-o/YHZpa4BlMEI/AAAAAAAAAsY/eOwwAYCmxz8X__mCZj9vL8pnFFOBWbetQCLcBGAsYHQ/s320/Ceph.png" width="320" /></a></div><br />
 
 <i>*Selesai</i>
+
+```
+Jika kamu tidak tahan dengan lelahnya belajar maka kamu harus tahan dengan perihnya kebodohan.
+```
