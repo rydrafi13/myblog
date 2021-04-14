@@ -258,7 +258,7 @@ Lakukan pada node ceph-admin
 ## Install Ceph Dashboard
 
 ```note
-    Lakukan pada node Ceph-admin
+Lakukan pada node Ceph-admin
 
 ```
 
