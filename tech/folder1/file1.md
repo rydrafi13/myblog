@@ -194,3 +194,58 @@ Lakukan pada node ceph-admin
 ```
 <div class="separator" style="clear: both; text-align: center;"><img border="0" data-original-height="218" data-original-width="425" height="164" src="https://1.bp.blogspot.com/-0FZiIx2Uv4Y/YHZbjtc8wDI/AAAAAAAAAr4/45FBbhHciMwCkBEBVMU16TVSN3wOruZGACLcBGAsYHQ/w320-h164/Ceph_mon.png" width="320" /></div>
 <center><i>*disini kita sudah berhasil menjalankan ceph monitor, tetapi kita belum memiliki cluster storage.</i></center>
+
+## Cluster Storage
+
+```note
+Lakukan pada node ceph-admin
+
+```
+Copy file konfigurasi dan keyring dari node **ceph-admin** ke node lainnya.
+- Copy ke **ceph-osd1**
+```scss
+    # scp /etc/ceph/ceph.conf ceph-osd1:/etc/ceph/ceph.conf
+    # scp /etc/ceph/ceph.client.admin.keyring ceph-osd1:/etc/ceph
+    # scp /var/lib/ceph/bootstrap-osd/ceph.keyring ceph-osd1:/var/lib/ceph/bootstrap-osd  
+```
+- Copy ke **ceph-osd2**
+```scss
+    # scp /etc/ceph/ceph.conf ceph-osd2:/etc/ceph/ceph.conf
+    # scp /etc/ceph/ceph.client.admin.keyring ceph-osd2:/etc/ceph
+    # scp /var/lib/ceph/bootstrap-osd/ceph.keyring ceph-osd2:/var/lib/ceph/bootstrap-osd 
+```
+```note
+Lakukan pada node ceph-admin, ceph-osd1, ceph-osd2
+
+```
+- Konfigurasi osd pada node **ceph-admin**
+```scss
+    # chown ceph. /etc/ceph/ceph.* /var/lib/ceph/bootstrap-osd/*; \
+    parted --script /dev/sdb 'mklabel gpt'; \
+    parted --script /dev/sdb "mkpart primary 0% 100%"; \
+    ceph-volume lvm create --data /dev/sdb1
+```
+- Konfigurasi osd pada node **ceph-osd1**
+```scss
+    # chown ceph. /etc/ceph/ceph.* /var/lib/ceph/bootstrap-osd/*; \
+    parted --script /dev/sdb 'mklabel gpt'; \
+    parted --script /dev/sdb "mkpart primary 0% 100%"; \
+    ceph-volume lvm create --data /dev/sdb1
+```
+- Konfigurasi osd pada node **ceph-osd2**
+```scss
+    # chown ceph. /etc/ceph/ceph.* /var/lib/ceph/bootstrap-osd/*; \
+    parted --script /dev/sdb 'mklabel gpt'; \
+    parted --script /dev/sdb "mkpart primary 0% 100%"; \
+    ceph-volume lvm create --data /dev/sdb1
+```
+
+```note
+Lakukan pada node ceph-admin
+
+```
+
+- Verifikasi Ceph Cluster
+```scss
+    # ceph -s
+```
