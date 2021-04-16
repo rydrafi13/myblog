@@ -29,7 +29,15 @@ Lakukan pada node ceph-admin
 ```
 
 - Konfigurasi Host
+nah kita tambahkan ip dan hostname dari node controller
+```
+    # vi /etc/hosts
+```
+
 - Konfigurasi SSH
+```
+    # ssh-copy-id controller
+```
 
 ## Installasi Ceph
 ```note
