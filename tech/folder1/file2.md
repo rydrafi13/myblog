@@ -23,7 +23,7 @@ Lakukan pada node ceph-admin
     # rbd pool init backups
     # rbd pool init vms
 ```
-# Prerequisite
+## Prerequisite
 ```note
 Lakukan pada node ceph-admin
 ```
@@ -31,12 +31,12 @@ Lakukan pada node ceph-admin
 - Konfigurasi Host
 - Konfigurasi SSH
 
-# Installasi Ceph
+## Installasi Ceph
 ```note
 Lakukan pada node controller
 ```
 
-# Konfigurasi Ceph
+## Konfigurasi Ceph
 ```note
 Lakukan pada node ceph-admin
 ```
@@ -52,7 +52,7 @@ Lakukan pada node controller
 
 - Restart service glance
 
-# Verifikasi
+## Verifikasi
 ```note
 Lakukan pada node controller
 ```
