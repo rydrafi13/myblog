@@ -29,7 +29,7 @@ Lakukan pada node ceph-admin
 ```
 
 - Konfigurasi Host
-nah kita tambahkan ip dan hostname dari node controller
+<br>nah kita tambahkan ip dan hostname dari node controller
 ```
     # vi /etc/hosts
 ```
