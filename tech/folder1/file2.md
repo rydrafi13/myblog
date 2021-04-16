@@ -43,22 +43,65 @@ Lakukan pada node ceph-admin
 ```note
 Lakukan pada node controller
 ```
+- Install ceph-common
+```
+    # apt-get install ceph-common
+```
 
 ## Konfigurasi Ceph
-```note
+- Copy file konfigurasi file
+```
 Lakukan pada node ceph-admin
+```
+
+```
+    # scp /etc/ceph/ceph.conf controller:/etc/ceph/
+    # scp /etc/ceph/ceph.client.admin.keyring controller:/etc/ceph/
+    # ssh controller "chown ceph. /etc/ceph/ceph."
 ```
 
 - Setup Ceph Client Authentication 
 
 ```note
-Lakukan pada node controller
+Lakukan pada node ceph-admin
+```
+```
+    # ceph auth get-or-create client.glance mon 'profile rbd' osd 'profile rbd pool=images' mgr 'profile rbd pool=images'
+    # ceph auth get-or-create client.glance | ssh controller sudo tee /etc/ceph/ceph.client.glance.keyring
+    # ssh controller sudo chown glance:glance /etc/ceph/ceph.client.glance.keyring
 ```
 
+```note
+Lakukan pada node controller
+```
 - Konfigurasi file ceph
-- Konfigurasi file glance
+```
+    # vi /etc/ceph/ceph.conf
 
+    # add
+    [client.images] 
+    keyring = /etc/ceph/ceph.client.glance.keyring
+```
+- Konfigurasi file glance
+```
+    # vi /etc/glance/glance-api.conf
+
+    # add
+    [default]
+    show_image_direct_url = True
+
+    [glance_store]
+    stores = rbd
+    default_store = rbd
+    rbd_store_pool = images
+    rbd_store_user = glance
+    rbd_store_ceph_conf = /etc/ceph/ceph.conf
+    rbd_store_chunk_size = 8
+```
 - Restart service glance
+```
+    # systemctl restart glance-api
+```
 
 ## Verifikasi
 ```note
