@@ -50,7 +50,8 @@ Lakukan pada node controller
 
 ## Konfigurasi Ceph
 - Copy file konfigurasi file
-```
+
+```note
 Lakukan pada node ceph-admin
 ```
 

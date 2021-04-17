@@ -29,6 +29,8 @@ Lakukan pada node compute dan cinder
     # apt-get install ceph-common
 ```
 
+## Konfigurasi Ceph
+
 
 
 <i>*Selesai</i>
