@@ -115,9 +115,18 @@ Lakukan pada node controller
 - Verifikasi Image
 ```
     # openstack image list
+```
+<div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-WPi6ItT6F_w/YHpW8gilO5I/AAAAAAAAAsg/Cy_ZbL_U6o4YgjeFOFfcyE2tIM6gguNUwCLcBGAsYHQ/s446/Screenshot%2Bfrom%2B2021-04-17%2B10-27-57.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="102" data-original-width="446" height="73" src="https://1.bp.blogspot.com/-WPi6ItT6F_w/YHpW8gilO5I/AAAAAAAAAsg/Cy_ZbL_U6o4YgjeFOFfcyE2tIM6gguNUwCLcBGAsYHQ/w320-h73/Screenshot%2Bfrom%2B2021-04-17%2B10-27-57.png" width="320" /></a></div><br />
+
+```
     # rbd -p images ls 
+```
+<div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-3PeU5zDy_W8/YHpXSQgGvZI/AAAAAAAAAso/qpPt39MNUWEllr07G9_AmFLu1UKfnK1xwCLcBGAsYHQ/s353/Screenshot%2Bfrom%2B2021-04-17%2B10-34-02.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="35" data-original-width="353" src="https://1.bp.blogspot.com/-3PeU5zDy_W8/YHpXSQgGvZI/AAAAAAAAAso/qpPt39MNUWEllr07G9_AmFLu1UKfnK1xwCLcBGAsYHQ/s320/Screenshot%2Bfrom%2B2021-04-17%2B10-34-02.png" width="320" /></a></div><br />
+
+```
     # rbd -p images info <id_image>
 ```
+<div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-yZ2iVnZPxbQ/YHpXiAyDAAI/AAAAAAAAAsw/lRqOyA6XXpsqgRPzXbkTblSQVu5ED0hfgCLcBGAsYHQ/s626/Screenshot%2Bfrom%2B2021-04-17%2B10-35-09.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="212" data-original-width="626" src="https://1.bp.blogspot.com/-yZ2iVnZPxbQ/YHpXiAyDAAI/AAAAAAAAAsw/lRqOyA6XXpsqgRPzXbkTblSQVu5ED0hfgCLcBGAsYHQ/s320/Screenshot%2Bfrom%2B2021-04-17%2B10-35-09.png" width="320" /></a></div><br />
 
 <i>*Selesai</i>
 
