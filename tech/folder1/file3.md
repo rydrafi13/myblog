@@ -86,6 +86,35 @@ Lakukan pada node cinder
 Lakukan pada node compute 
 ```
 
+- Generate UUID pada node compute
+<br>kemudian copy uuid yang sudah digenerate
+```
+    # uuidgen 
+```
+
+- Membuat script untuk key libvirt
+- Mendefinisikan script ke dalam libvirt
+```
+    # cat > secret.xml <<EOF
+    <secret ephemeral='no' private='no'>
+    <uuid>457eb676-33da-42ec-9a8c-9293d545c337</uuid>
+    <usage type='ceph'>
+        <name>client.cinder secret</name>
+    </usage>
+    </secret>
+    EOF
+    # sudo virsh secret-define --file secret.xml
+    # sudo virsh secret-set-value --secret 457eb676-33da-42ec-9a8c-9293d545c337 --base64 $(cat client.cinder.key) && rm client.cinder.key secret.xml
+```
+
+## Verifikasi
+```note
+Lakukan pada node controller
+```
+
+- Membuat Volume
+- Verfikasi Volume
+
 <i>*Selesai</i>
 
 ```
