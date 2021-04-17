@@ -109,7 +109,15 @@ Lakukan pada node controller
 ```
 
 - Upload Image Glance
+```
+    # openstack image create --file cirros-0.5.1-x86_64-disk.img --container-format bare --disk-format raw --public Ceph-Cirros
+```
 - Verifikasi Image
+```
+    # openstack image list
+    # rbd -p images ls 
+    # rbd -p images info <id_image>
+```
 
 <i>*Selesai</i>
 
