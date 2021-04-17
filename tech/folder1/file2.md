@@ -113,6 +113,10 @@ Lakukan pada node controller
     # openstack image create --file cirros-0.5.1-x86_64-disk.img --container-format bare --disk-format raw --public Ceph-Cirros
 ```
 - Verifikasi Image
+```note
+Lakukan pada node controller
+```
+
 ```
     # openstack image list
 ```
