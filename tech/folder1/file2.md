@@ -58,7 +58,7 @@ Lakukan pada node ceph-admin
 ```
     # scp /etc/ceph/ceph.conf controller:/etc/ceph/
     # scp /etc/ceph/ceph.client.admin.keyring controller:/etc/ceph/
-    # ssh controller "chown ceph. /etc/ceph/ceph."
+    # ssh controller "chown ceph. /etc/ceph/ceph.*"
 ```
 
 - Setup Ceph Client Authentication 

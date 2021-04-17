@@ -38,11 +38,11 @@ Lakukan pada node ceph-admin
 ```
     # scp /etc/ceph/ceph.conf compute:/etc/ceph/
     # scp /etc/ceph/ceph.client.admin.keyring compute:/etc/ceph/
-    # ssh compute "chown ceph. /etc/ceph/ceph."
+    # ssh compute "chown ceph. /etc/ceph/ceph.*"
 
     # scp /etc/ceph/ceph.conf cinder:/etc/ceph/
     # scp /etc/ceph/ceph.client.admin.keyring cinder:/etc/ceph/
-    # ssh cinder "chown ceph. /etc/ceph/ceph."
+    # ssh cinder "chown ceph. /etc/ceph/ceph.*"
 ```
 
 - Setup Ceph Client Authentication
@@ -59,9 +59,15 @@ Lakukan pada node ceph-admin
 
 - Konfigurasi file ceph
 ```note
-Lakukan pada node cinder
+Lakukan pada node cinder dan compute
 ```
 
+```
+    # vi /etc/ceph/ceph.conf
+    [client.volumes]
+    keyring = /etc/ceph/ceph.client.cinder.keyring
+```
+- Konfigurasi file cinder
 ```
     # vi /etc/cinder/cinder.conf
    
@@ -97,14 +103,22 @@ Lakukan pada node compute
 ```
     # cat > secret.xml <<EOF
     <secret ephemeral='no' private='no'>
-    <uuid>457eb676-33da-42ec-9a8c-9293d545c337</uuid>
+    <uuid>2077629b-a565-4198-9591-e24b1d04b361</uuid>
     <usage type='ceph'>
-        <name>client.cinder secret</name>
+    <name>client.cinder secret</name>
     </usage>
     </secret>
     EOF
     # sudo virsh secret-define --file secret.xml
-    # sudo virsh secret-set-value --secret 457eb676-33da-42ec-9a8c-9293d545c337 --base64 $(cat client.cinder.key) && rm client.cinder.key secret.xml
+    # sudo virsh secret-set-value --secret 2077629b-a565-4198-9591-e24b1d04b361 --base64 $(cat client.cinder.key) && rm client.cinder.key secret.xml
+```
+## Restart Service
+```note lakukan pada node compute, dan cinder
+```
+
+- Restart Service
+```
+    # systemctl restart cinder*
 ```
 
 ## Verifikasi
@@ -112,6 +126,7 @@ Lakukan pada node compute
 Lakukan pada node controller
 ```
 
+- Verifikasi Volume Service
 - Membuat Volume
 - Verfikasi Volume
 
