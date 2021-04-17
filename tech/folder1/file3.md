@@ -19,7 +19,7 @@ Lakukan pada node ceph-admin
     # ssh-copy-id cinder
 ```
 
-- Install Ceph
+## Install Ceph
 ```note
 Lakukan pada node compute dan cinder
 ```
