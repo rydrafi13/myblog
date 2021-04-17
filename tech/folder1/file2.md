@@ -49,7 +49,7 @@ Lakukan pada node controller
 ```
 
 ## Konfigurasi Ceph
-- Copy file konfigurasi file
+- Copy file konfigurasi ceph
 
 ```note
 Lakukan pada node ceph-admin
