@@ -1,9 +1,9 @@
-### Hi there, I'm <a href="https://blog.ngcloud.tech" target="_blank">Rizqi</a> <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
-Learner, Tech Enthusiast.
+### Hi there, I'm <a href="https://blog.ngcloud.tech" target="_blank">rafiryd</a> <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
+Learner, IT Enthusiast.
 
 <p>
-  <img height="180em" src="https://github-readme-stats-alpha-mauve.vercel.app/api?username=xdnroot&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true&theme=tokyonight" />
-  <img height="180em" src="https://github-readme-stats-alpha-mauve.vercel.app/api/top-langs/?username=xdnroot&show_icons=true&hide_border=true&layout=compact&langs_count=8&theme=tokyonight"/>
+  <img height="180em" src="https://github-readme-stats-alpha-mauve.vercel.app/api?username=rydrafi13&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true&theme=tokyonight" />
+  <img height="180em" src="https://github-readme-stats-alpha-mauve.vercel.app/api/top-langs/?username=rydrafi13&show_icons=true&hide_border=true&layout=compact&langs_count=8&theme=tokyonight"/>
 </p>
 
 #### Reach Me :
