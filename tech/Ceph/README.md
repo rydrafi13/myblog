@@ -1,7 +1,7 @@
 # Ceph : Introduction 
 
 <center>
-    <img src="https://i0.wp.com/ceph.io/wp-content/uploads/2016/07/Ceph_Logo_Stacked_RGB_120411_fa.png" alt="Ceph" title="Ceph Logo" width="200" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy34E9PrILYVH7j9arGpwqC9AspQ7Hy30pmv6mqUrImi2EqaacBWa8maEljoZq1GIUwc0&usqp=CAU" alt="Ceph" title="Ceph Logo" width="200" />
 </center>
 
 pada kesempatan kali ini kita akan membahas tentang Ceph, Nah kita mulai dengan perkenalan tentang ceph terlebih dahulu, pembahasan selanjutnya kita lanjut melakukan installasi dan integrasi ceph pada openstack.
