@@ -1,3 +1,3 @@
-# file2
+# Setup & Installation
 
 source: `{{ page.path }}`

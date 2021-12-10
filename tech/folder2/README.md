@@ -1,3 +1,3 @@
-# Openstack Victoria 
+# Kubernetes 
 
 source: `{{ page.path }}`

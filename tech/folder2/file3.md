@@ -1,3 +1,3 @@
-# file3
+# Clustering Node
 
 source: `{{ page.path }}`
