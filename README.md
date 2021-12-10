@@ -11,5 +11,5 @@ Learner, IT Enthusiast.
   <a href="https://linkedin.com/in/rafiriadi13" target="_blank"><img alt="LinkedIn" height="32" width="32" src="assets/linkedin.svg"></a>
   <a href="https://facebook.com/rydrafi13" target="_blank"><img alt="Facebook" height="32" width="32" src="assets/facebook.svg"></a>
   <a href="https://t.me/rafiryd" target="_blank"><img alt="Telegram" height="32" width="32" src="assets/telegram.svg"></a>
-  <a href="https://instagram.com/ryd_rafi" target="_blank"><img alt="Instagram" height="32" width="32" src="assets/instagram.svg"></a>
+  <a href="https://www.instagram.com/ryd_rafi/" target="_blank"><img alt="Instagram" height="32" width="32" src="assets/instagram.svg"></a>
 </p>
