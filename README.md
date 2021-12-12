@@ -1,3 +1,5 @@
+Blog ini dibuat untuk dokumentasi pembelajaran ku, silahkan dinikmati hasil catatan ku, semoga bermanfaat ya...
+
 Hi there, I'm <a href="https://blog.ngcloud.tech" target="_blank">rafiryd</a> <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 Learner, IT Enthusiast.
 

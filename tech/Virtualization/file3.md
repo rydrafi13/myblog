@@ -1,0 +1,3 @@
+# Vagrant
+
+source: `{{ page.path }}`
